@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Table} from 'react-bootstrap';
-// import Api from '../Utils/Api';
+
 
 export default function Directory() {
     const [results, setResults] = useState([])
@@ -14,7 +14,6 @@ export default function Directory() {
 
 return(
     <>
-
 <Table striped bordered hover>
   <thead>
     <tr>
@@ -45,12 +44,8 @@ return(
   
 </Table>
 </>
-
 );
-    
 }
-
-
 const Row= ({ picture, name, phone, cell, email, id }) => {
      
     return (
